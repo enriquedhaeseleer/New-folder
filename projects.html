@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - SweetSpot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SweetSpot</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="projects-header">
+                <div class="header-content">
+                    <div class="title-wrapper">
+                        <h1>My Projects</h1>
+                        <p class="subtitle">Track and manage your marketing campaigns</p>
+                    </div>
+                    <div class="search-wrapper">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search projects...">
+                            <svg width="20" height="20" fill="none" stroke="currentColor">
+                                <path d="M19 19l-4-4m0-7A7 7 0 111 8a7 7 0 0114 0z" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <button class="btn btn-primary">
+                            <svg width="16" height="16" fill="none" stroke="currentColor">
+                                <path d="M8 1v14M1 8h14" stroke-width="2"/>
+                            </svg>
+                            New Project
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tabs-wrapper">
+                    <nav class="project-tabs">
+                        <a href="#" class="tab active">All Projects (6)</a>
+                        <a href="#" class="tab">Active (3)</a>
+                        <a href="#" class="tab">Completed (2)</a>
+                        <a href="#" class="tab">Drafts (1)</a>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="projects-grid">
+                <div class="grid grid-3">
+                    <article class="project-card">
+                        <div class="card-content">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Marketing Campaign">
+                            <span class="status-badge active">Active</span>
+                            
+                            <div class="card-body">
+                                <div class="meta">
+                                    <span>Oct 15, 2023</span>
+                                    <span class="separator">•</span>
+                                    <span>Marketing</span>
+                                </div>
+                                
+                                <h3>Q4 Social Campaign</h3>
+                                <p>Holiday season marketing campaign across multiple platforms</p>
+                                
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                    <span class="progress-text">75% Complete</span>
+                                </div>
+                                
+                                <div class="metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">+180%</span>
+                                        <span class="metric-label">ROI</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">12.5K</span>
+                                        <span class="metric-label">Engagement</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-actions">
+                                <a href="project-detail.html" class="btn btn-primary">View Details</a>
+                                <div class="action-icons">
+                                    <button class="icon-btn" title="Edit">
+                                        <svg><!-- Edit icon --></svg>
+                                    </button>
+                                    <button class="icon-btn" title="Share">
+                                        <svg><!-- Share icon --></svg>
+                                    </button>
+                                    <button class="icon-btn danger" title="Delete">
+                                        <svg><!-- Delete icon --></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Repeat for other projects -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SweetSpot. All rights reserved.</p>
+    </footer>
+    <script src="projects.js"></script>
+</body>
+</html>

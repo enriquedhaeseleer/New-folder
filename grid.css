@@ -1,0 +1,100 @@
+/* Layout Containers */
+.container {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+    padding: 0 1rem;
+}
+
+.container-sm { max-width: 640px; }
+.container-md { max-width: 768px; }
+.container-lg { max-width: 1024px; }
+.container-xl { max-width: 1280px; }
+
+/* Grid System */
+.grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Basic Grid Layouts */
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Flexible Grids */
+.grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Grid Areas */
+.grid-main {
+    display: grid;
+    grid-template-columns: [full-start] minmax(2rem, 1fr) 
+                          [main-start] minmax(0, 1200px) 
+                          [main-end] minmax(2rem, 1fr) [full-end];
+}
+
+.grid-main > * {
+    grid-column: main;
+}
+
+.grid-main-full {
+    grid-column: full;
+}
+
+.grid-center {
+    place-items: center;
+}
+
+.col-span-2 {
+    grid-column: span 2;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+}
+
+.section-sm {
+    padding: 2rem 0;
+}
+
+.section-lg {
+    padding: 6rem 0;
+}
+
+/* Layout Utilities */
+.flow > * + * {
+    margin-top: var(--flow-spacing, 1rem);
+}
+
+@media (max-width: 1024px) {
+    .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .grid-2, .grid-3, .grid-4 {
+        grid-template-columns: 1fr;
+    }
+    
+    .col-span-2 {
+        grid-column: auto;
+    }
+
+    .grid { 
+        --gap: 1.5rem; 
+    }
+
+    .section {
+        --section-padding: 4rem;
+    }
+}

@@ -1,0 +1,123 @@
+/* About Hero */
+.about-hero {
+    padding: 8rem 0 4rem;
+    background: var(--white);
+    text-align: center;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 2rem;
+    border-left: 2px solid var(--primary);
+    margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 32px;
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+/* Team */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    padding: 4rem 0;
+}
+
+.team-member {
+    text-align: center;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.team-info {
+    padding: 1.5rem;
+}
+
+.team-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.bio {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.values h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.value-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .team-member img {
+        height: 200px;
+    }
+}
+
+.mission-vision {
+    margin-top: 3rem;
+    gap: 2rem;
+}

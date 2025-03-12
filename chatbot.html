@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat - SweetSpot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SweetSpot</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-title">
+                        <div class="status-dot active"></div>
+                        <h2>AI Assistant</h2>
+                    </div>
+                    <button class="btn btn-outline">Clear Chat</button>
+                </div>
+
+                <div class="chat-messages">
+                    <div class="message bot">
+                        <div class="message-avatar">
+                            <svg width="24" height="24" fill="none" stroke="currentColor">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div class="message-content">
+                            <p>Hello! I'm your AI marketing assistant. How can I help you today?</p>
+                        </div>
+                    </div>
+
+                    <div class="message user">
+                        <div class="message-content">
+                            <p>I need help with social media strategy</p>
+                        </div>
+                    </div>
+
+                    <div class="message bot">
+                        <div class="message-avatar">
+                            <svg width="24" height="24" fill="none" stroke="currentColor">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div class="message-content">
+                            <p>I'll help you create an effective social media strategy. Let's start by identifying your target audience and goals.</p>
+                            <div class="suggestion-chips">
+                                <button class="chip">Brand Awareness</button>
+                                <button class="chip">Lead Generation</button>
+                                <button class="chip">Engagement</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input">
+                    <form class="input-form">
+                        <input type="text" placeholder="Type your message..." autocomplete="off">
+                        <button type="submit" class="send-button">
+                            <svg width="24" height="24" fill="none" stroke="currentColor">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SweetSpot. All rights reserved.</p>
+    </footer>
+</body>
+</html>

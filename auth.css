@@ -1,0 +1,55 @@
+.auth-section {
+    padding: 4rem 2rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    margin: 6rem auto;
+}
+
+.auth-form {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.auth-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--surface);
+}
+
+.auth-links a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: var(--text);
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 2px solid var(--surface);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
